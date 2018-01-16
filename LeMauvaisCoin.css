@@ -1,0 +1,670 @@
+html, body {
+	border:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+	float:left;
+	background-color: #f6d1a1;
+}
+
+/*-----------------------------------------------------*/
+/*BANDEAU & MENU*/
+
+header {
+	position:fixed;
+	width:100%;
+	float:left;
+	background-color: #f6d1a1;
+	border-bottom:3px solid rgba(111, 67, 55, 0.79);
+	z-index: 1000;
+}
+
+header p {
+	width:100%;
+	float:left;
+	z-index:99;
+	margin: 0.5vw 0 1vw;
+	font-family: Calibri;
+	font-size: 3vw;
+	text-align:center;
+}
+
+header p img {
+	width:6.5vw;
+	vertical-align:middle;
+}
+
+nav {
+	float:left;
+	list-style-type:none;
+	width:100%;
+	text-align:center;
+	font-family:Calibri;
+	z-index:1000;
+}
+
+nav ul {
+	margin:0;
+	padding:0;
+}
+
+.menu {
+	width:15%;
+	display:inline-block;
+	position:relative;
+	border-radius:8px 8px 0 0;
+	background-color: #4d89a9;
+	background-image:linear-gradient(to bottom, #4d89a9 0%, #333A40 100%);
+	font-size:1.5vw;
+	padding:0;
+	margin:0;
+}
+
+.menu a, .menu li a {
+	text-decoration:none;
+	color:white;
+}
+
+.menu ul li:hover a {
+	color:black;
+}
+
+.menu li {
+	width:100%;
+	display:inherit;
+	border-radius:0;
+	background:#333A40;
+}
+
+.menu li:last-child, .menu li:hover:last-child {
+	border-radius:0 0 8px 8px;
+}
+
+.menu li:hover {
+	border-radius:0;
+	background:#4d89a9;
+}
+
+.menu ul{
+	position:absolute;
+	width:100%;
+	padding:0;
+	margin:0;
+	z-index: 1000;
+	max-height:0;
+	left:0;
+	overflow:hidden;
+	transition: .8s all .3s;
+}
+
+.menu:hover {
+	background:#4d89a9;
+	color:white;
+}
+
+.menu:hover ul {
+	max-height:15em;
+}
+
+.recadrage_header {
+	height:9.97vw;
+	float:left;
+	width: 100%;
+
+	margin-top: 5.2vw;
+}
+
+/*----------------------------------------------*/
+
+.page_core {
+	width:100%;
+	min-height:100%;
+	float:left;
+	margin-top:-5.2vw;
+}
+
+.colonne_centre {
+	width:70%;
+	margin:0;
+	float:left;
+	min-height:100%;
+}
+
+.colonne_gauche, .colonne_droite {
+	width:15%;
+	min-height:100%;
+	margin:0;
+	float:left;
+}
+
+.maintient {
+	margin:0.01px 0;
+}
+
+.pas_de_resultat {
+	font-size:1.3vw;
+	font-weight:bold;
+	font-family:Calibri;
+	text-align: justify;
+	margin: 5%;
+}
+
+.info_page {
+	float:left;
+	width:80%;
+	margin:2vw 5%;
+	padding:5%;
+	font-size:1.2vw;
+	font-family:Calibri;
+	text-align:justify;
+	background-color:#FFE4C0;
+	border:2px solid #4d89a9;
+	border-radius:2vw;
+}
+
+.info_page form {
+	position:relative;
+	width:100%;
+}
+
+.info_page p {
+	float:left;
+	width:100%;
+	text-align:center;
+	font-size:1.3vw;
+	font-weight:bold;
+	margin:0.5vw 0;
+}
+
+.formSend_tri {
+	
+	float:right;
+	margin:1vw 0 0 0;
+	border: 2px solid rgba(111, 67, 55, 0.79);
+	border-radius: 8px;
+}
+
+/*----------------------------------------------*/
+/*REGION*/
+
+.region_liste {
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
+	font-family:Calibri;
+	font-size:2vw;
+	text-align:center;
+}
+
+.region_metropole {
+	float:left;
+	width:50%;
+}
+
+.region_DOM_TOM, .region_categorie {
+	float:left;
+	width:25%;
+}
+
+.region_metropole a {
+	width:40%;
+	margin:4px 4.7%;
+}
+
+.region_DOM_TOM a, .region_categorie a {
+	width:90%;
+	margin:4px 5%;
+}
+
+.region_metropole a, .region_DOM_TOM a, .region_categorie a {
+	float:left;
+	font-size:1.5vw;
+	text-decoration:none;
+	border:0.14vw solid #4d89a9;
+	border-radius:8px;
+	background-color:#FFE4C0;
+	color:#214183;
+}
+
+.region_metropole a:hover, .region_DOM_TOM a:hover, .region_categorie a:hover {
+	background-color:#EDD1AA
+}
+
+/*----------------------------------------------*/
+/*ANNONCE*/
+
+section {
+	float:left;
+	width:100%;
+}
+
+label {
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+section input {
+	display:none;
+}
+
+section form {
+	margin:0;
+	width:10%;
+}
+
+.annonce {
+	display:block;
+	width:100%;
+	margin:0.3% 0;
+	float:left;
+	background-color:#FFE4C0;
+	border:2px solid #4d89a9;
+	border-radius:2.4vw;
+	transition: all 0.3s ease-out;
+}
+
+.wrapper {
+	width:70%;
+	margin:0 1.5%;
+	right: 0;
+	float: right;
+}
+
+.wrapper_img {
+	width:25.5%;
+	margin:1.5% 0 1.5% 1.5%;
+	float:left;
+	display:block;
+}
+
+.wrapper_img img {
+	display:block;
+	margin:auto;
+	max-width:100%;
+	max-height:7.45vw;
+	border-radius:0.2vw;
+	transition: all 0.3s ease-out;
+}
+
+.annonce .titre {
+	width:90%;
+	font-size:1.5vw;
+	float:left;
+	margin:0.9vw 0;
+	font-weight: bold;
+	color: #214183;
+	font-family: Calibri;
+}
+
+
+.modifier {
+	display:block;
+	width:100%;
+	float:left;
+	margin:0.8vw 2% 0.9vw 0;
+  border:0.15vw solid #6395B2;
+	border-radius:0.2vw;
+	background-color:#E8D2A3;
+	font-size:1vw;
+	font-family:Calibri;
+	font-weight:bold;
+	
+	transition:all 0.3s ease-out;
+}
+
+.modifier:hover {
+	box-shadow:3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.user_email, .user_phone, .code_postal, .description {
+	margin:0;
+	font-size:0vw;
+}
+
+.categorie {
+	width:100%;
+	float:left;
+	margin:0.45vw 0;
+	font-size: 1vw;
+}
+
+.ville, .region {
+	margin:0;
+	float:left;
+	font-size:1vw;
+}
+
+.ville {
+	margin-right:5px;
+}
+
+.region {
+	margin-left:5px;
+}
+
+.separateur_ville_region {
+	margin:0;
+	float:left;
+	font-size: 1vw;
+}
+
+.prix {
+	width:88%;
+	margin:0 0 0.45vw 0;
+	float:left;
+	font-size: 1.6vw;
+	font-family: Calibri;
+	font-weight: bold;
+	color: orangered;
+}
+
+.faire_offre {
+	margin:0 2%;
+	float:left;
+	font-size:1.4vw;
+	font-family:Calibri;
+	font-weight:normal;
+	color: orangered;
+}
+
+.date {
+	width:12%;
+	float:right;
+	margin:2px 0;
+	font-size: 1vw;
+}
+
+.annonce:hover {
+	background-color:#EDD1AA;
+	box-shadow:2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.annonce, .wrapper, .titre, .code_postal, .separateur_ville_region,
+.description, .region, .user_email, .user_phone, .categorie,
+.date, .faire_offre, .prix, .wrapper_img {
+	transition: all 0.3s ease-out;
+} 
+
+.hack_annonce:checked+label> div.annonce {
+	background-color:#EDD1AA;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper {
+	width:60%;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper_img {
+	width:35.5%;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.code_postal {
+	font-size:1vw;
+	float:left;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.separateur_ville_region {
+	font-size:0vw;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.description {
+	margin:20px 0 25px 34px;
+	width:90%;
+	font-size:1vw;
+	float:left;
+	text-align:justify;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.region {
+	width:100%;
+	margin:3px 0;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.user_phone,
+.hack_annonce:checked+label> div.annonce div.wrapper p.user_email {
+	float:right;
+	font-size:1vw;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.user_email {
+	float:right;
+	font-size:1vw;
+	width:100%;
+	text-align:right;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.titre {
+	text-align:center;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper p.categorie {
+	width:80%;
+}
+
+.hack_annonce:checked+label> div.annonce div.wrapper_img img {
+	max-height:16vw;
+}
+
+/*----------------------------------------------*/
+/*FORMULAIRE*/
+
+.recadrage_form {
+	width:100%;
+	height:5.26vw;
+	float: left;
+}
+
+.formulaire {
+	float:left;
+	position:fixed;
+	width:100%;
+	margin:9.9vw 0 0.5% 0;
+	background-color: #f6d1a1;
+	border-bottom:3px solid rgba(111, 67, 55, 0.79);
+}
+
+.formulaire form {
+	float:left;
+	margin:0;
+	width:60%;
+	margin:0 20%;
+	border-left:3px solid rgba(111, 67, 55, 0.79);
+	border-right:3px solid rgba(111, 67, 55, 0.79);
+	border-radius:2vw;
+}
+
+.categorie_titre {
+	background-color:#adc2e6;
+}
+
+.formRecherche {
+	width:30%;
+}
+
+.formRecherche, .formCategorie, .formRegion, .formLieu, .formPrix {
+	margin:0.5vw 1.098vw;
+	float:left;
+	font-size: 0.8691vw;
+	padding:0.15vw;
+}
+
+.formSend {
+	margin:0.5vw 1.098vw;
+	float:right;
+	font-size: 0.8691vw;
+}
+
+.formPrixP {
+	margin:0.5vw 0;
+	float:left;
+	font-size: 0.8691vw;
+	width: 14%;
+}
+
+.formPrix {
+	font-size:1vw;
+	margin: 0.55vw 1.098vw;
+	float: left;
+}
+
+/*----------------------------------------------*/
+/*FORMULAIRE DE DEPOT*/
+
+.error_password {
+	width:50%;
+	font-size:1.7vw;
+	font-weight:bold;
+	font-family:Calibri;
+	text-align:center;
+	margin:1vw auto 0 auto;
+	color:red;
+	border-left:2px solid red;
+	border-right:2px solid red;
+	border-radius:2.4vw;
+}
+
+form {
+	width:100%;
+	float:left;
+}
+
+form .formDeposer {
+	width:100%;
+	float:left;
+	margin:2% 0;
+	font-size:1vw;
+	border-left: 2px solid rgba(111, 67, 55, 0.79);
+	border-right: 2px solid rgba(111, 67, 55, 0.79);
+	border-radius: 8px;
+}
+
+.formDeposer p {
+	font-family:Calibri;
+	font-size:1.4vw;
+	font-weight:bold;
+	color:#4d89a9;
+	background-color:rgba(111, 67, 55, 0.79);
+	margin: 0.8vw 0;
+}
+
+p.error {
+	color:red;
+	width:100%;
+	background-color:rgba(0,0,0,0);
+	float:left;
+	margin-left:1vw;
+	font-size:1vw;
+}
+
+.formCategorie_deposer, .formRegion_deposer, .formVille_deposer,
+.formCode_postal_deposer, .formMail_deposer, .formPhone,
+.formTitre_deposer, .formDescription_deposer, .formPrix_deposer,
+.formFaire_offre, .formImage_deposer, .formPassword {
+	margin:1%;
+	float:left;
+	font-size:1.1vw;
+	border-radius:6px;
+}
+
+.formRegion_deposer {
+	margin-right:70%;
+}
+
+.formMail_deposer {
+	margin-right:66%;
+	width: 33%;
+}
+
+.formPhone {
+	width:12%;
+}
+
+.formTitre_deposer {
+	width:40%;
+	margin:1% 30%;
+}
+
+.formDescription_deposer {
+	width:90%;
+	margin:1% 5%;
+}
+
+.formPrix_deposer {
+	width:20%;
+}
+
+.formDeposer p.formFaire_offre {
+	background-color:rgba(0,0,0,0);
+	color: black;
+	font-size:1.2vw;
+}
+
+.formImage_deposer {
+	margin-right:60%;
+}
+
+.infoForm {
+	width:100%;
+	float:left;
+}
+
+.formSend_deposer {
+	float:right;
+	margin:0.5vw 0 0.5vw 90%;
+	border: 2px solid rgba(111, 67, 55, 0.79);
+	border-radius: 8px;
+}
+
+.formSend_supprimer {
+	float:right;
+	margin:0.5vw 0;
+	border: 2px solid rgba(111, 67, 55, 0.79);
+	border-radius: 8px;
+}
+
+/*----------------------------------------------*/
+/*FOOTER*/
+
+footer {
+	width:100%;
+	height:5.2vw;
+	text-align:center;
+	bottom:0px;
+	background-color: rgba(111, 67, 55, 0.79);
+	float: left;
+}
+
+footer div {
+	width:100%;
+	float:left;
+}
+
+footer div img {
+	height:4.9vw;
+	margin-left:10%;
+	float:left;
+	margin-top:0.15vw;
+}
+
+footer div div {
+	width:30%;
+	float:left;
+	margin-left:19.5%;
+	margin-top:0.8vw;
+}
+
+footer div div div {
+	width:33.33%;
+	margin:0;
+}
+
+footer div div a {
+	float:left;
+	width:100%;
+	text-align:center;
+	text-decoration:none;
+	color:lightskyblue;
+	font-size:0.9vw;
+}
